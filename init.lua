@@ -17,7 +17,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	})
 end
 
-
+require("lazy").setup { spec = { import = "plugins" } }
 
 
 
