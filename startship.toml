@@ -1,0 +1,62 @@
+[configuracao_geral]  
+command_timeout = 1000  
+"$schema" = 'https://starship.rs/config-schema.json'  
+add_newline = true  
+disabled = true  
+
+[formato_do_prompt]  
+format = """  
+ ➜\  
+$directory\  
+${custom.giturl}\  
+$git_branch\  
+$git_state\  
+$git_status\  
+$line_break\  
+$character  
+"""  
+
+right_format = """$all"""  
+
+[os_symbols]  
+Windows = "󰍲"  
+Ubuntu = "󰕈"  
+SUSE = ""  
+Raspbian = "󰐿"  
+Mint = "󰣭"  
+Macos = " "  
+Manjaro = ""  
+Linux = "󰌽"  
+Gentoo = "󰣨"  
+Fedora = "󰣛"  
+Alpine = ""  
+Amazon = ""  
+Android = ""  
+Arch = "󰣇"  
+Artix = "󰣇"  
+CentOS = ""  
+Debian = "󰣚"  
+Redhat = "󱄛"  
+RedHatEnterprise = "󱄛"  
+
+[substituicoes_de_diretorios]  
+"Documents" = "󰈙 "  
+"Downloads" = " "  
+"Music" = "󰝚 "  
+"Pictures" = " "  
+"Developer" = "󰲋 "  
+
+[configuracoes_de_hora]  
+disabled = true  
+time_format = "%R"  
+style = "bg:peach"  
+format = '[[  $time ](fg:mantle bg:foam)]($style)'  
+
+[configuracoes_de_simbolo_do_prompt]  
+disabled = false  
+success_symbol = '[🍔 $version](bold fg:green)'  
+error_symbol = '[𝘹](bold fg:red)'  
+vimcmd_symbol = '[](bold fg:creen)'  
+vimcmd_replace_one_symbol = '[](bold fg:purple)'  
+vimcmd_replace_symbol = '[](bold fg:purple)'  
+vimcmd_visual_symbol = '[](bold fg:lavender)'  
